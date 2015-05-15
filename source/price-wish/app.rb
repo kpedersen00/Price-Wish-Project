@@ -17,6 +17,9 @@ require APP_ROOT.join('app', 'models', 'wish')
 require APP_ROOT.join('app', 'controllers', 'search')
 require APP_ROOT.join('app', 'controllers', 'controller')
 
+require 'dotenv'
+Dotenv.load
+
 # are other require statements needed to include all your models?
 
 Controller.new

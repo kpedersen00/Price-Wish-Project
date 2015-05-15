@@ -40,7 +40,6 @@ class Controller
     # end
 
     puts "Here's what we found for your item:"
-    p vendor_results
     puts vendor_results["store"]
     puts "sells it for: $" + "%.02f" % vendor_results["price"] + "!"
 
