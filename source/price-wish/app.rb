@@ -14,6 +14,7 @@ require APP_ROOT.join('app', 'models', 'vendor')
 require APP_ROOT.join('app', 'models', 'wish')
 
 #require the app's controllers
+require APP_ROOT.join('app', 'controllers', 'search')
 require APP_ROOT.join('app', 'controllers', 'controller')
 
 # are other require statements needed to include all your models?
