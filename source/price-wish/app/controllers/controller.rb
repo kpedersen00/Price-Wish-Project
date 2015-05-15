@@ -34,11 +34,6 @@ class Controller
     wish = Wish.new(price: wish_price, state: "pending")
     wish.user = user
 
-    # puts "We found your item at the following stores:"
-    # vendor_results.each do |item, index|
-    #   puts "#{index+1}. #{item["store"]} at #{item["price"].to_s}"
-    # end
-
     puts "Here's what we found for your item:"
     puts vendor_results["store"]
     puts "sells it for: $" + "%.02f" % vendor_results["price"] + "!"
