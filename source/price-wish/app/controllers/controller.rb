@@ -17,6 +17,7 @@ class Controller
     results = ["Nike 1", "Nike 2", "Nike 3"]
 
     puts "Which one best match your wish?"
+
     results.each_with_index do |item, index|
       puts "#{index+1}. #{item}"
     end
@@ -25,11 +26,15 @@ class Controller
 
     puts "How much would you pay for #{results[choice-1]}?"
 
-    wish_price = gets.chomp.to_i
+    print "$"
+
+    wish_price = gets.chomp
     wish = Wish.new(price: wish_price, state: "pending")
     wish.user = user
     p wish
-    p wish.price
+    puts "$" + "%.02f" % wish.price
     # wish.save
+
+
   end
 end
