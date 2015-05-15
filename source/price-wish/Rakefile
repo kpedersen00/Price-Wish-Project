@@ -1,7 +1,7 @@
 require 'rake'
 require 'rspec/core/rake_task'
 require_relative 'db/config'
-require_relative 'lib/students_importer'
+require_relative 'lib/user_importer'
 
 desc "launch console"
 task :console do
@@ -29,7 +29,7 @@ end
 
 desc "populate the test database with sample data"
 task "db:populate" do
-  StudentsImporter.import
+  UserImporter.import
 end
 
 desc "rollback your migration--use STEPS=number to step back multiple times"
