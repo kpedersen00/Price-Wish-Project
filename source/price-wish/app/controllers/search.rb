@@ -31,7 +31,6 @@ def upc_search(upc)
 
   temp_hash = JSON.parse(api_result = Net::HTTP.get(upc_search_uri))["0"]
 
-  p temp_hash
 
   limited_data = { "name" => temp_hash["productname"],
                    "price" => temp_hash["price"],
